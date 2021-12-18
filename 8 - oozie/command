@@ -1,0 +1,4 @@
+1 - sudo service oozie start
+2 - sudo service oozie stop
+3 - hadoop fs -put examples/
+

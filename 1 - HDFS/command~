@@ -1,0 +1,22 @@
+HDFS
+1- sudo -u hdfs hadoop fs -mkdir /sample
+2- sudo -u hdfs hadoop fs -chgrp cloudera /testhdfs
+3- sudo -u hdfs hadoop fs -chmod 777 /testhdfs
+4- hdfs dfs -copyFromLocal /home/cloudera/Desktop/file1 /testhdfs/file1
+5- hdfs dfs -ls /testhdfs
+6- hdfs dfs -copyToLocal /testhdfs/file1 /home/cloudera/Desktop/filez
+7- udo -u hdfs hadoop fs -count /
+8- hdfs dfs -cp /testhdfs/file1 /testhdfs/filecopy
+9- hdfs dfs -ls /testhdfs
+10- dfs dfs -du /    => different size
+11- hdfs dfs -du -s / =>summary
+12- sudo -u hdfs hadoop fs -du -s /
+13- sudo -u hdfs hadoop fs -du -h /
+14- sudo -u hdfs hadoop fs -mv /testhdfs/file1 /file1
+15- sudo -u hdfs hadoop fs -rm /file1
+16- hdfs dfs -tail /testhdfs/filecopy
+17- sudo -u hdfs hadoop fs  -chmod 775 /user/cloudera
+18- hdfs dfs -ls /
+19- sudo -u hdfs hadoop fs -put /home/cloudera/Desktop/file1 /mydir2
+20- hdfs dfs -get /mydir2/file1 /home/cloudera/Desktop/file2z
+

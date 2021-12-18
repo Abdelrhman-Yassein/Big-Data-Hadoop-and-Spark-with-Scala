@@ -1,0 +1,19 @@
+1. Create entire Table
+create table realestate (street string, cityname string, zipcode int, state string, beds int, baths int, sq_feet int, flat_type string, price int) row format delimited fields terminated by ',' stored as textfile;
+
+2. Load entire Data
+load data local inpath '/home/cloudera/hive180520/realestatedata.csv' into table realestate;
+
+3. Select query 
+select * from realestate;
+
+4. Enable Bucketing on Basis of Reducers
+set hive.enforce.bucketing=true ;
+
+5. Create Bucket Table
+create table realestate_bucket (street string, zipcode int, state string, beds int, baths int, sq_feet int, flat_type string, price int) partitioned by (city string) clustered by (street) into 4 buckets row format delimited fields terminated by  ',';
+
+6. Insert data in to bucket table
+insert into table realestate_bucket partition(city) select street, zipcode ,state, beds, baths, sq_feet,flat_type,price,cityname from realestate;
+
+7. Check the output from 'user/hive/warehouse/pig180520/realestate_bucket'
