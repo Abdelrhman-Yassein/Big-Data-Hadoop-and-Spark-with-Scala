@@ -77,7 +77,7 @@ Big Data Hadoop and Spark with Scala
 
 ### Certificate
 [Big Data Hadoop and Spark with Scala ](https://www.udemy.com/certificate/UC-aa2eadc7-1237-450c-9232-1666a26f21fd//)
-![certificate](https://github.com/Abdelrhman-Yassein/Taming-Big-Data-with-MapReduce-and-Hadoop---Hands-On/blob/main/Taming%20Big%20Data%20with%20MapReduce%20and%20Hadoop%20-%20Hands%20On!%20.jpg?raw=true)
+![certificate](https://github.com/Abdelrhman-Yassein/Big-Data-Hadoop-and-Spark-with-Scala/blob/main/Big%20Data%20Hadoop%20and%20Spark%20with%20Scala%20.jpg)
 
 ## Contact
 
